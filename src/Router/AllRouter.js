@@ -6,7 +6,7 @@ export const AllRouter = () => {
   return (
     <div >
         <Routes>    
-            <Route path="" element={<MovieList />} />
+            <Route path="" element={<MovieList path_url="discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc"/>} />
             <Route path="movies/:id" element={<MovieDetail />} />
             <Route path="movies/popular" element={<MovieList />} />
             <Route path="movies/top" element={<MovieList />} />
