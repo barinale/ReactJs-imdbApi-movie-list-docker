@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import imageNotFound from './../assets/no_image_available.jpeg'
 export const Card = ({movie}) => {
-    console.log(movie)
     const {id,title,poster_path,overview} = movie;
     const image = poster_path ? "https://image.tmdb.org/t/p/original/"+poster_path :imageNotFound; 
   return (
