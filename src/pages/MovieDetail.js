@@ -12,15 +12,21 @@ console.log(movie)
 return (
     <main className="">
       <section className='flex justify-center flex-wrap py-5'>
-        <div className='basis-1/4  bg-slate-500 '>
-          <img src={image} className='rounded' width="200" height="200"/>
+        <div className='max-w-sm '>
+          <img src={image} className='rounded' />
         </div>
-        <div className='basis-1/2 bg-slate-300 '>
-          <h1>Name</h1>
-          <p>lorem lorem loreml omrelore</p>
-          <ul>
-            <li></li>
-          </ul>
+        <div className='max-w-2xl text-gray-700 text-lg dark:text-white'>
+          <h1 className='text-4xl font-bold my-3 text-center lg:text-left'>{movie.title}</h1>
+          <p className='my-4'>{movie.overview}</p>
+          <p className='my-7 flex flex-wrap gap-2 '>
+          {movie.genres? movie.genres.map((genr)=>{
+            return <span className='p-2 border rounded mr-2 dark:border-gray-600 ' key={genr.id}>{genr.name}</span>
+          })  :'' }
+          </p>
+         
+
+         
+
 
         </div>
       </section>
