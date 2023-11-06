@@ -1,11 +1,12 @@
 import {Card} from './../componenets'
 import { useFetch } from '../hooks/useFetch';
 import { useParams } from 'react-router-dom';
+import { useTitle } from '../hooks/useTitle';
 
 export const Search = ({path_url}) => {
   let {query} = useParams()
   const {data : movie}  = useFetch(path_url,query)
-
+  const PageTitle = useTitle(`Search For ${query}`)
   return (
     <main>
     <section className='py-7'>

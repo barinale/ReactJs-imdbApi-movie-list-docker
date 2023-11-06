@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react';
 import {Card} from './../componenets'
 import { useFetch } from '../hooks/useFetch';
+import { useTitle } from '../hooks/useTitle';
 
-export const MovieList = ({path_url}) => {
+export const MovieList = ({path_url,title}) => {
 const {data : movie}  = useFetch(path_url)
-  return (
+const PageTitle = useTitle(title)
+return (
     <main className='flex flex-wrap justify-center'>
     { 
       movie.map((movie)=>{
