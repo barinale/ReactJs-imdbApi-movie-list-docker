@@ -8,6 +8,7 @@ import { useTitle } from '../hooks/useTitle'
    
 const {data : movie}  =  useFetch(path_url+id)
 const image = movie.backdrop_path ? "https://image.tmdb.org/t/p/original/"+movie.poster_path : imageNotFound;
+// eslint-disable-next-line
 const PageTitle= useTitle(movie.title)
 
 return (

@@ -6,6 +6,7 @@ import { useTitle } from '../hooks/useTitle';
 export const Search = ({path_url}) => {
   let {query} = useParams()
   const {data : movie}  = useFetch(path_url,query)
+  // eslint-disable-next-line
   const PageTitle = useTitle(`Search For ${query}`)
   return (
     <main>
