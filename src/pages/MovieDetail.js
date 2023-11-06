@@ -14,7 +14,7 @@ return (
     <main className="">
       <section className='flex justify-center flex-wrap py-5 gap-6'>
         <div className='max-w-sm mr-6'>
-          <img src={image} className='rounded' />
+          <img src={image} alt="Image_Movie" className='rounded' />
         </div>
         <div className='max-w-2xl text-gray-700 text-lg dark:text-white'>
           <h1 className='text-4xl font-bold my-3 text-center lg:text-left'>{movie.title}</h1>
@@ -32,7 +32,7 @@ return (
             </svg>
             <p className="ml-2 text-sm font-bold text-gray-900 dark:text-white">{movie.vote_average}</p>
             <span className="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-            <a href="#" className="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-white">{movie.vote_count} reviews</a>
+            <a href={`https://www.imdb.com/title/${movie.imdb_id}`} className="text-sm font-medium text-gray-900 underline hover:no-underline dark:text-white">{movie.vote_count} reviews</a>
         </div>
          <p className='my-2'>
           <span className='font-bold pr-2'>Runtime :</span>
