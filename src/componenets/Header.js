@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { Link,NavLink, useNavigate } from 'react-router-dom'
+import  { useEffect, useState } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
 import PhotoIcon from "./../assets/fav.png"
 export const Header = () => {
 const active = "text-base block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500";

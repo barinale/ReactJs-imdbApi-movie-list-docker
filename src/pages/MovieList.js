@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import {Card} from './../componenets'
 import { useFetch } from '../hooks/useFetch';
 import { useTitle } from '../hooks/useTitle';
