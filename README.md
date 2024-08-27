@@ -1,3 +1,15 @@
+## Environment Variables
+
+This project requires an API key for the IMDb API to function correctly. You need to set the `REACT_APP_API_KEY` in a `.env` file at the root of your project.
+
+### Steps to Set Up the `.env` File
+
+1. Create a `.env` file in the root directory of your project (if it doesn't already exist).
+2. Add the following line to the `.env` file, replacing `your_api_key_here` with your actual IMDb API key:
+
+   ```plaintext
+   REACT_APP_API_KEY=your_api_key_here
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
